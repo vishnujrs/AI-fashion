@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionAI - Smart Outfit Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FashionAI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#suggestions">Suggestions</a></li>
+                <li><a href="#cart"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Style</h1>
+            <p>Upload your image and let AI suggest the perfect outfit for you</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <section id="upload" class="upload-section">
+        <h2>Upload Your Image</h2>
+        <div class="upload-container">
+            <div class="upload-box" id="dropZone">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & Drop your image here or</p>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <button class="upload-btn">Choose File</button>
+            </div>
+            <div class="preview-container" id="previewContainer">
+                <img id="imagePreview" src="" alt="Preview" hidden>
+                <button id="analyzeBtn" class="analyze-btn" hidden>Analyze Image</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="suggestions" class="suggestions">
+        <h2>Suggested Outfits</h2>
+        <div class="suggestions-grid">
+            <!-- Suggestions will be dynamically added here -->
+        </div>
+        <div class="shopping-platforms">
+            <h3>Shop Similar Items</h3>
+            <div class="platform-links">
+                <a href="#" class="platform-link amazon">
+                    <i class="fab fa-amazon"></i>
+                    <span>Shop on Amazon</span>
+                </a>
+                <a href="#" class="platform-link flipkart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Shop on Flipkart</span>
+                </a>
+                <a href="#" class="platform-link myntra">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Shop on Myntra</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-summary">
+            <div class="total">Total: $0.00</div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FashionAI</h3>
+                <p>AI-powered fashion recommendations</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FashionAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
